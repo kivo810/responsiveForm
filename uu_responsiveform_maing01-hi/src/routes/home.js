@@ -66,7 +66,6 @@ export const Home = createVisualComponent({
     //@@viewOff:interface
 
     //@@viewOn:render
-    const attrs = UU5.Common.VisualComponent.getAttrs(props);
     return (
       <>
         <UU5.Bricks.NavBar colorSchema="primary">
@@ -106,6 +105,11 @@ export const Home = createVisualComponent({
         <QuestionTable />
         <QuestionFlavour />
         <QuestionMap />
+
+        <UU5.Forms.ContextControls
+          buttonSubmitProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Create" , sk: "Vyhodnot"}} /> }}
+          buttonCancelProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Cancel", sk: "Zrus" }} /> }}
+        />
 
 
         <UU5.Bricks.Pagination

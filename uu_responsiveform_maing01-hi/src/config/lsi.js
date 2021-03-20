@@ -1,15 +1,18 @@
 const Lsi = {
   appName: {
+    sk: "Responzivny formular",
     cs: "Aplikace uuResponsiveform",
     en: "Application uuResponsiveform",
   },
 
   left: {
     home: {
+      sk: "Formular",
       cs: "Vítejte",
       en: "Welcome",
     },
     about: {
+      sk: "O formulari",
       cs: "O aplikaci",
       en: "About Application",
     },
