@@ -2,6 +2,7 @@
 import UU5 from "uu5g04";
 import { createVisualComponent } from "uu5g04-hooks";
 import Config from "../config/config.js"
+import Css from "../formcomponents.css.js"
 //@@viewOff:imports
 
 const QuestionOrl = createVisualComponent({
@@ -24,7 +25,7 @@ const QuestionOrl = createVisualComponent({
     return (
       <div>
         <UU5.Bricks.Section content=<UU5.Bricks.Lsi lsi={{ en: "Old Movies" , sk: "Stare filmy"}} />/>
-        <UU5.Bricks.Ol>
+        <UU5.Bricks.Ol className={Css.ol()}>
           <UU5.Bricks.Li content="Godfather (1972)"/>
           <UU5.Bricks.Li content="Fight club (1999)"/>
           <UU5.Bricks.Li content="Shawshank redemption (1994)"/>

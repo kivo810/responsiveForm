@@ -22,6 +22,7 @@ import QuestionCode from "../bricks/form_components/question-code";
 import QuestionTable from "../bricks/form_components/question-table";
 import QuestionFlavor from "../bricks/form_components/question-flavor";
 import QuestionMap from "../bricks/form_components/question-map";
+import Css from "../bricks/form.css.js"
 //@@viewOff:imports
 
 const STATICS = {
@@ -67,7 +68,7 @@ export const ResponsiveForm = createVisualComponent({
 
     //@@viewOn:render
     return (
-      <>
+      <div className={Css.body()}>
         <UU5.Bricks.NavBar colorSchema="primary">
           <UU5.Bricks.NavBar.Header content="Menu" />
           <UU5.Bricks.NavBar.Nav>
@@ -122,7 +123,7 @@ export const ResponsiveForm = createVisualComponent({
         {/*  onChanged={(comp, index, newActive) => console.log(comp, index, newActive)}*/}
         {/*  background*/}
         {/*/>*/}
-      </>
+      </div>
     );
     //@@viewOff:render
   },
