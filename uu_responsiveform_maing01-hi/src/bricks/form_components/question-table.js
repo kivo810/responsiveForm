@@ -31,7 +31,7 @@ const QuestionTable = createVisualComponent({
         <UU5.Bricks.Table bordered={true} responsive={true} hover={true} striped={true}>
           <UU5.Bricks.Table.THead>
             <UU5.Bricks.Table.Tr>
-              <UU5.Bricks.Table.Th content='The Hobbit Trilogy' colSpan={5} />
+              <UU5.Bricks.Table.Th content={inputLsi.hobbitTrilogy} colSpan={5} />
             </UU5.Bricks.Table.Tr>
           </UU5.Bricks.Table.THead>
           <UU5.Bricks.Table.TBody>
@@ -59,7 +59,7 @@ const QuestionTable = createVisualComponent({
           </UU5.Bricks.Table.TBody>
         </UU5.Bricks.Table>
         <UU5.Forms.Text
-          label="Length of 3. movie (The Hobbit: The Battle of the Five Armies)"
+          label={inputLsi.tableQuestion}
           placeholder="120"
           size="m"
         />

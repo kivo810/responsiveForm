@@ -28,7 +28,7 @@ const QuestionRange = createVisualComponent({
 
     return (
       <div>
-        <UU5.Forms.Slider label={<UU5.Bricks.Lsi lsi={{ en: "Choose volume more than 100" , sk: "Zvol hodnotu vyssiu ako 100"}} />}
+        <UU5.Forms.Slider label={inputLsi.rangeQuestion}
                           value={20}
                           size="m"
                           min={0}
@@ -39,7 +39,7 @@ const QuestionRange = createVisualComponent({
       </div>
     );
     //@@viewOff:render
-  },
+  }
 });
 
 export default QuestionRange;

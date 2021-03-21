@@ -32,7 +32,7 @@ const QuestionVideo = createVisualComponent({
                           autoPlay={true}
                           disableControls={false}>
         </UU5.Bricks.Video>
-        <UU5.Forms.Checkboxes label="What kind of pets do you like?"
+        <UU5.Forms.Checkboxes label={inputLsi.videoQuestion}
                               size="m"
                               inputWidth="200px"
                               value={[

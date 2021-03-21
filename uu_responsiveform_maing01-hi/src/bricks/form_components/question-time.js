@@ -29,7 +29,7 @@ const QuestionTime = createVisualComponent({
     return (
       <div>
         <UU5.Forms.TimePicker
-          label={<UU5.Bricks.Lsi lsi={{ en: "Pick time between 18:05 - 18:25" , sk: "Zvol cas medzi 18:05 - 18:25"}} />}
+          label={inputLsi.timeQuestion}
           size="m"
           placeholder={"10:00"}
           />

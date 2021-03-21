@@ -42,6 +42,34 @@ const Lsi = {
   orlQuestion: {
     en: "Which of these movies is oldest?" ,
     sk: "Ktory z tychto filmov je nastarsi?"
+  },
+  pageQuestion: {
+    en: "What page is highlighted on the bottom of the page?" ,
+    sk: "Ake cislo strany na spodku formulara je zvyraznene?"
+  },
+  rangeQuestion: {
+    en: "Choose volume more than 100" ,
+    sk: "Zvol hodnotu vyssiu ako 100"
+  },
+  hobbitTrilogy: {
+    en: "The Hobbit Trilogy",
+    sk: "Trilogia Hobit"
+  },
+  tableQuestion: {
+    en: "Length of 3. movie (The Hobbit: The Battle of the Five Armies)",
+    sk: "Dlzka 3. filmu Hobita"
+  },
+  timeQuestion: {
+    en: "Pick time between 18:05 - 18:25" ,
+    sk: "Zvol cas medzi 18:05 - 18:25"
+  },
+  videoQuestion: {
+    en: "dasdad",
+    sk: "dfssffdsf"
+  },
+  ytbQuestion: {
+    en: "en: What is the name of third prisoner? (Can be found on 1:40)",
+    sk: "Ake je meno tretieho väzňa? (Najdes na 1:40)"
   }
 
 };
