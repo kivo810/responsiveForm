@@ -1,7 +1,8 @@
 //@@viewOn:imports
 import UU5 from "uu5g04";
-import { createVisualComponent } from "uu5g04-hooks";
-import Config from "../config/config.js"
+import { createVisualComponent, useLsiValues } from "uu5g04-hooks";
+import Config from "../config/config.js";
+import Lsi from "../form-components-lsi";
 //@@viewOff:imports
 
 const QuestionColor = createVisualComponent({
@@ -16,6 +17,10 @@ const QuestionColor = createVisualComponent({
   //@@viewOff:defaultProps
 
   render() {
+    //@@viewOn:hooks
+    const inputLsi = useLsiValues(Lsi);
+
+    //@@viewOn:hooks
     //@@viewOn:private
     //@@viewOff:private
 
@@ -23,7 +28,7 @@ const QuestionColor = createVisualComponent({
 
     return (
       <div align="center">
-        <UU5.Forms.Radios label={<UU5.Bricks.Lsi lsi={{ en: "What color is created by mixing red and blue?" , sk: "Aka farba vznikne zmixovanim cervenej a modrej?"}} />}
+        <UU5.Forms.Radios label={inputLsi.colorQuestion}
                           size="m"
                           inputWidth="150px"
                           value={[

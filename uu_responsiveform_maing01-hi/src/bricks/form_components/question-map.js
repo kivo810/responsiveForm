@@ -1,7 +1,8 @@
 //@@viewOn:imports
 import UU5 from "uu5g04";
-import { createVisualComponent } from "uu5g04-hooks";
-import Config from "../config/config.js"
+import { createVisualComponent, useLsiValues } from "uu5g04-hooks";
+import Config from "../config/config.js";
+import Lsi from "../form-components-lsi";
 //@@viewOff:imports
 
 const QuestionMap = createVisualComponent({
@@ -16,6 +17,10 @@ const QuestionMap = createVisualComponent({
   //@@viewOff:defaultProps
 
   render() {
+    //@@viewOn:hooks
+    const inputLsi = useLsiValues(Lsi);
+
+    //@@viewOn:hooks
     //@@viewOn:private
     //@@viewOff:private
 
@@ -31,7 +36,7 @@ const QuestionMap = createVisualComponent({
         />
 
         <UU5.Forms.Select
-          label={<UU5.Bricks.Lsi lsi={{ en: "Which place is pinched in the map?" , sk: "Ktore miesto je pripnute na mape?"}} />}
+          label={inputLsi.mapQuestion}
         >
           <UU5.Forms.Select.Option value="Rajec"/>
           <UU5.Forms.Select.Option value="Certovica"/>

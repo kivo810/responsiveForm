@@ -1,7 +1,8 @@
 //@@viewOn:imports
 import UU5 from "uu5g04";
-import { createVisualComponent } from "uu5g04-hooks";
-import Config from "../config/config.js"
+import { createVisualComponent, useLsiValues } from "uu5g04-hooks";
+import Config from "../config/config.js";
+import Lsi from "../form-components-lsi";
 //@@viewOff:imports
 
 const QuestionColorPicker = createVisualComponent({
@@ -16,6 +17,10 @@ const QuestionColorPicker = createVisualComponent({
   //@@viewOff:defaultProps
 
   render() {
+    //@@viewOn:hooks
+    const inputLsi = useLsiValues(Lsi);
+
+    //@@viewOn:hooks
     //@@viewOn:private
     //@@viewOff:private
 
@@ -24,7 +29,7 @@ const QuestionColorPicker = createVisualComponent({
     return (
       <div>
         <UU5.Forms.ColorPicker
-          label={<UU5.Bricks.Lsi lsi={{ en: "Select darkest black color" , sk: "Zvol najtmavsiu ciernu farbu"}} />}
+          label={inputLsi.colorPicker}
           size={"m"}
         />
       </div>

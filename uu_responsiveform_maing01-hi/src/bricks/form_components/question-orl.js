@@ -1,8 +1,9 @@
 //@@viewOn:imports
 import UU5 from "uu5g04";
-import { createVisualComponent } from "uu5g04-hooks";
+import { createVisualComponent, useLsiValues } from "uu5g04-hooks";
 import Config from "../config/config.js"
-import Css from "../formcomponents.css.js"
+import Css from "../formcomponents.css.js";
+import Lsi from "../form-components-lsi";
 //@@viewOff:imports
 
 const QuestionOrl = createVisualComponent({
@@ -17,6 +18,10 @@ const QuestionOrl = createVisualComponent({
   //@@viewOff:defaultProps
 
   render() {
+    //@@viewOn:hooks
+    const inputLsi = useLsiValues(Lsi);
+
+    //@@viewOn:hooks
     //@@viewOn:private
     //@@viewOff:private
 
@@ -24,7 +29,7 @@ const QuestionOrl = createVisualComponent({
 
     return (
       <div>
-        <UU5.Bricks.Section content=<UU5.Bricks.Lsi lsi={{ en: "Old Movies" , sk: "Stare filmy"}} />/>
+        <UU5.Bricks.Section content={inputLsi.movieHeader}/>
         <UU5.Bricks.Ol className={Css.ol()}>
           <UU5.Bricks.Li content="Godfather (1972)"/>
           <UU5.Bricks.Li content="Fight club (1999)"/>
@@ -34,7 +39,7 @@ const QuestionOrl = createVisualComponent({
         </UU5.Bricks.Ol>
 
         <UU5.Forms.Select
-          label={<UU5.Bricks.Lsi lsi={{ en: "Which of these movies is oldest?" , sk: "Ktory z tychto filmov je nastarsi?"}} />}
+          label={inputLsi.orlQuestion}
           size="m"
         >
           <UU5.Forms.Select.Option value="1"/>

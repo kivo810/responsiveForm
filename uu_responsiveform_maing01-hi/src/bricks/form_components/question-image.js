@@ -1,7 +1,8 @@
 //@@viewOn:imports
 import UU5 from "uu5g04";
-import { createVisualComponent } from "uu5g04-hooks";
-import Config from "../config/config.js"
+import { createVisualComponent, useLsiValues } from "uu5g04-hooks";
+import Config from "../config/config.js";
+import Lsi from "../form-components-lsi";
 //@@viewOff:imports
 
 const QuestionImage = createVisualComponent({
@@ -16,6 +17,10 @@ const QuestionImage = createVisualComponent({
   //@@viewOff:defaultProps
 
   render() {
+    //@@viewOn:hooks
+    const inputLsi = useLsiValues(Lsi);
+
+    //@@viewOn:hooks
     //@@viewOn:private
     //@@viewOff:private
 
@@ -27,7 +32,7 @@ const QuestionImage = createVisualComponent({
                           responsive={true} >
         </UU5.Bricks.Image>
         <UU5.Forms.Number
-          label=<UU5.Bricks.Lsi lsi={{ en: "Number of boats" , sk: "Počet lodí na obrázku"}} />
+          label={inputLsi.boatsQuestion}
           size="m"
           min={0}
           max={100}

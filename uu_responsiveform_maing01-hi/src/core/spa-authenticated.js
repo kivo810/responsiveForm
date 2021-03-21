@@ -60,14 +60,14 @@ export const SpaAuthenticated = createVisualComponent({
           bottom={<Bottom />}
           type={3}
           displayedLanguages={["en", "sk"]}
-          left={<Left />}
-          leftWidth="!xs-300px !s-300px !m-288px !l-288px !xl-288px"
-          leftFixed
-          leftRelative="m l xl"
-          leftResizable="m l xl"
-          leftResizableMinWidth={220}
-          leftResizableMaxWidth={500}
-          isLeftOpen="m l xl"
+          // left={<Left />}
+          // leftWidth="!xs-300px !s-300px !m-288px !l-288px !xl-288px"
+          // leftFixed
+          // leftRelative="m l xl"
+          // leftResizable="m l xl"
+          // leftResizableMinWidth={220}
+          // leftResizableMaxWidth={500}
+          // isLeftOpen="m l xl"
           showLeftToggleButton
           fullPage
         >

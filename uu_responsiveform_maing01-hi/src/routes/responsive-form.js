@@ -1,9 +1,10 @@
 //@@viewOn:imports
 import UU5 from "uu5g04";
 import "uu5g04-bricks";
-import { createVisualComponent } from "uu5g04-hooks";
+import { createVisualComponent, useLsiValues } from "uu5g04-hooks";
 import Plus4U5 from "uu_plus4u5g01";
 import "uu_plus4u5g01-bricks";
+import Lsi from "./responsive-form-lsi";
 
 import Config from "./config/config.js";
 import QuestionImage from "../bricks/form_components/question-image";
@@ -54,12 +55,25 @@ export const ResponsiveForm = createVisualComponent({
   ...STATICS,
 
   //@@viewOn:propTypes
+  propTypes: {
+    onSave: UU5.PropTypes.func,
+    onCancel: UU5.PropTypes.func
+  },
   //@@viewOff:propTypes
 
   //@@viewOn:defaultProps
+  defaultProps: {
+    onSave: () => {},
+    onCancel: () => {}
+  },
   //@@viewOff:defaultProps
 
-  render(props) {
+  render(onSave, onCancel) {
+    //@@viewOn:hooks
+    const inputLsi = useLsiValues(Lsi);
+
+    //@@viewOn:hooks
+
     //@@viewOn:private
     //@@viewOff:private
 
@@ -72,15 +86,15 @@ export const ResponsiveForm = createVisualComponent({
         <UU5.Bricks.NavBar colorSchema="primary">
           <UU5.Bricks.NavBar.Header content="Menu" />
           <UU5.Bricks.NavBar.Nav>
-            <UU5.Bricks.NavBar.Nav.Item><UU5.Bricks.Icon icon="mdi-home" /><UU5.Bricks.Lsi lsi={{ en: "Home" , sk: "Domov"}} /></UU5.Bricks.NavBar.Nav.Item>
+            <UU5.Bricks.NavBar.Nav.Item><UU5.Bricks.Icon icon="mdi-home" />{inputLsi.home}</UU5.Bricks.NavBar.Nav.Item>
             <UU5.Bricks.NavBar.Nav.Item>
-              <UU5.Bricks.Icon icon="mdi-newspaper" /><UU5.Bricks.Lsi lsi={{ en: "News" , sk: "Novinky"}} />
+              <UU5.Bricks.Icon icon="mdi-newspaper" />{inputLsi.news}
             </UU5.Bricks.NavBar.Nav.Item>
             <UU5.Bricks.NavBar.Nav.Item>
-              <UU5.Bricks.Icon icon="mdi-account" /><UU5.Bricks.Lsi lsi={{ en: "Profile" , sk: "Profil"}} />
+              <UU5.Bricks.Icon icon="mdi-account" />{inputLsi.myProfile}
             </UU5.Bricks.NavBar.Nav.Item>
             <UU5.Bricks.NavBar.Nav.Item>
-              <UU5.Bricks.Icon icon="mdi-logout" style={{ color: "red" }} /><UU5.Bricks.Lsi lsi={{ en: "LogOut" , sk: "Odhlásiť"}} />
+              <UU5.Bricks.Icon icon="mdi-logout" style={{ color: "red" }} />{inputLsi.logOut}
             </UU5.Bricks.NavBar.Nav.Item>
           </UU5.Bricks.NavBar.Nav>
         </UU5.Bricks.NavBar>
@@ -95,7 +109,7 @@ export const ResponsiveForm = createVisualComponent({
         <QuestionFillText />
 
         <UU5.Bricks.Button>
-          <UU5.Bricks.Lsi lsi={{ en: "Click to expand more question and enable answers" , sk: "Klikni na zobrazenie dalsich otazok a spristupnit nedostupne odpovede"}} />
+          {inputLsi.expandButton}
         </UU5.Bricks.Button>
 
         <QuestionNavbar />
@@ -108,8 +122,8 @@ export const ResponsiveForm = createVisualComponent({
         <QuestionMap />
 
         <UU5.Forms.ContextControls align="center"
-          buttonSubmitProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Create" , sk: "Vyhodnoť"}} /> }}
-          buttonCancelProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Cancel", sk: "Zrušiť" }} /> }}
+          buttonSubmitProps={{ content: inputLsi.validate}}
+          buttonCancelProps={{ content: inputLsi.cancel }}
         />
 
 
@@ -126,7 +140,7 @@ export const ResponsiveForm = createVisualComponent({
       </div>
     );
     //@@viewOff:render
-  },
+  }
 });
 
 export default ResponsiveForm;

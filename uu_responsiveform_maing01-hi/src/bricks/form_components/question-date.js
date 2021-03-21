@@ -1,7 +1,8 @@
 //@@viewOn:imports
 import UU5 from "uu5g04";
-import { createVisualComponent } from "uu5g04-hooks";
-import Config from "../config/config.js"
+import { createVisualComponent, useLsiValues } from "uu5g04-hooks";
+import Config from "../config/config.js";
+import Lsi from "../form-components-lsi";
 //@@viewOff:imports
 
 const QuestionDate = createVisualComponent({
@@ -16,6 +17,10 @@ const QuestionDate = createVisualComponent({
   //@@viewOff:defaultProps
 
   render() {
+    //@@viewOn:hooks
+    const inputLsi = useLsiValues(Lsi);
+
+    //@@viewOn:hooks
     //@@viewOn:private
     //@@viewOff:private
 
@@ -23,7 +28,7 @@ const QuestionDate = createVisualComponent({
 
     return (
       <div>
-        <UU5.Forms.DatePicker label={<UU5.Bricks.Lsi lsi={{ en: "What is the date today?" , sk: "Aky je dnes datum?"}}/>}
+        <UU5.Forms.DatePicker label={inputLsi.datePicker}
                               valueType="iso"
                               placeholder={UU5.Common.Tools.getDateString("1990-11-21", { country: "sk-sk" })}
                               size="m" />

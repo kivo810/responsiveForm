@@ -1,7 +1,8 @@
 //@@viewOn:imports
 import UU5 from "uu5g04";
-import { createVisualComponent } from "uu5g04-hooks";
-import Config from "../config/config.js"
+import { createVisualComponent, useLsiValues } from "uu5g04-hooks";
+import Config from "../config/config.js";
+import Lsi from "../form-components-lsi";
 //@@viewOff:imports
 
 const QuestionFlavor = createVisualComponent({
@@ -16,6 +17,10 @@ const QuestionFlavor = createVisualComponent({
   //@@viewOff:defaultProps
 
   render() {
+    //@@viewOn:hooks
+    const inputLsi = useLsiValues(Lsi);
+
+    //@@viewOn:hooks
     //@@viewOn:private
     //@@viewOff:private
 
@@ -24,7 +29,7 @@ const QuestionFlavor = createVisualComponent({
     return (
       <div>
         <UU5.Forms.Select
-          label={<UU5.Bricks.Lsi lsi={{ en: "Choose black ice cream flavor" , sk: "Zvol prichut zmrzliny s ciernou farbou"}} />}
+          label={inputLsi.flavor}
         >
           <UU5.Forms.Select.Option value="Apple"/>
           <UU5.Forms.Select.Option value="Vanilla"/>
