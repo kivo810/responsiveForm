@@ -8,7 +8,7 @@ import "uu_plus4u5g01-app";
 import Config from "./config/config";
 import Left from "./left";
 import Bottom from "./bottom";
-import Home from "../routes/home";
+import ResponsiveForm from "../routes/responsive-form";
 //@@viewOff:imports
 
 const STATICS = {
@@ -24,7 +24,7 @@ const ControlPanel = UU5.Common.Component.lazy(() => import("../routes/control-p
 const DEFAULT_USE_CASE = "home";
 const ROUTES = {
   "": DEFAULT_USE_CASE,
-  home: { component: <Home /> },
+  home: { component: <ResponsiveForm /> },
   about: { component: <About /> },
   "sys/uuAppWorkspace/initUve": { component: <InitAppWorkspace /> },
   controlPanel: { component: <ControlPanel /> },

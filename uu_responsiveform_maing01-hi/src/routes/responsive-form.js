@@ -49,7 +49,7 @@ const CLASS_NAMES = {
   `,
 };
 
-export const Home = createVisualComponent({
+export const ResponsiveForm = createVisualComponent({
   ...STATICS,
 
   //@@viewOn:propTypes
@@ -112,20 +112,20 @@ export const Home = createVisualComponent({
         />
 
 
-        <UU5.Bricks.Pagination
-          items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
-          activeIndex={8}
-          range={10}
-          prevLabel="Previous"
-          nextLabel="Next"
-          size="m"
-          onChanged={(comp, index, newActive) => console.log(comp, index, newActive)}
-          background
-        />
+        {/*<UU5.Bricks.Pagination*/}
+        {/*  items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}*/}
+        {/*  activeIndex={8}*/}
+        {/*  range={10}*/}
+        {/*  prevLabel="Previous"*/}
+        {/*  nextLabel="Next"*/}
+        {/*  size="m"*/}
+        {/*  onChanged={(comp, index, newActive) => console.log(comp, index, newActive)}*/}
+        {/*  background*/}
+        {/*/>*/}
       </>
     );
     //@@viewOff:render
   },
 });
 
-export default Home;
+export default ResponsiveForm;

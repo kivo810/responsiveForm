@@ -28,7 +28,7 @@ const QuestionYtb = createVisualComponent({
                                  muted={true}
         />
         <UU5.Forms.Text
-                        label={<UU5.Bricks.Lsi lsi={{ en: "What is the name of second prisoner?" , sk: "Ake je meno druheho väzňa?"}} />}
+                        label={<UU5.Bricks.Lsi lsi={{ en: "What is the name of third prisoner? (Can be found on 1:40)" , sk: "Ake je meno tretieho väzňa? (Najdes na 1:40)"}} />}
                         placeholder={"Ladislav"}
                         size="m"
         />

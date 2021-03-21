@@ -25,11 +25,11 @@ const QuestionOrl = createVisualComponent({
       <div>
         <UU5.Bricks.Section content=<UU5.Bricks.Lsi lsi={{ en: "Old Movies" , sk: "Stare filmy"}} />/>
         <UU5.Bricks.Ol>
-          <UU5.Bricks.Li content="God father"/>
-          <UU5.Bricks.Li content="Fight club"/>
-          <UU5.Bricks.Li content="Shawshank redemption"/>
-          <UU5.Bricks.Li content="Dark knight"/>
-          <UU5.Bricks.Li content="Pulp fiction"/>
+          <UU5.Bricks.Li content="Godfather (1972)"/>
+          <UU5.Bricks.Li content="Fight club (1999)"/>
+          <UU5.Bricks.Li content="Shawshank redemption (1994)"/>
+          <UU5.Bricks.Li content="Dark knight (2008)"/>
+          <UU5.Bricks.Li content="12 Angry Men (1957)"/>
         </UU5.Bricks.Ol>
 
         <UU5.Forms.Select
@@ -39,6 +39,8 @@ const QuestionOrl = createVisualComponent({
           <UU5.Forms.Select.Option value="1"/>
           <UU5.Forms.Select.Option value="2"/>
           <UU5.Forms.Select.Option value="3"/>
+          <UU5.Forms.Select.Option value="4"/>
+          <UU5.Forms.Select.Option value="5"/>
         </UU5.Forms.Select>
       </div>
     );

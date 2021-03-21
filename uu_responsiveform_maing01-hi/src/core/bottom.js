@@ -42,10 +42,24 @@ export const Bottom = createVisualComponent({
     const attrs = UU5.Common.VisualComponent.getAttrs(props, CLASS_NAMES.main());
     return (
       <div {...attrs}>
-        uuResponsiveformMaing01-{process.env.VERSION} © Unicorn,{" "}
-        <UU5.Bricks.Link target="_blank" href="TODO">
-          <UU5.Bricks.Lsi lsi={Lsi.bottom.termsOfUse} />
-        </UU5.Bricks.Link>
+        <div>
+          <UU5.Bricks.Pagination
+            items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+            activeIndex={8}
+            range={10}
+            prevLabel="Previous"
+            nextLabel="Next"
+            size="m"
+            onChanged={(comp, index, newActive) => console.log(comp, index, newActive)}
+            background
+          />
+        </div>
+        <div>
+          uuResponsiveformMaing01-{process.env.VERSION} © Unicorn,{" "}
+          <UU5.Bricks.Link target="_blank" href="TODO">
+            <UU5.Bricks.Lsi lsi={Lsi.bottom.termsOfUse} />
+          </UU5.Bricks.Link>
+        </div>
       </div>
     );
     //@@viewOff:render
