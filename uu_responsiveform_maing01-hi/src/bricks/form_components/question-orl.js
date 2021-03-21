@@ -23,7 +23,7 @@ const QuestionOrl = createVisualComponent({
 
     return (
       <div>
-        <UU5.Bricks.Section content="Which of these movies is oldest?"/>
+        <UU5.Bricks.Section content=<UU5.Bricks.Lsi lsi={{ en: "Old Movies" , sk: "Stare filmy"}} />/>
         <UU5.Bricks.Ol>
           <UU5.Bricks.Li content="God father"/>
           <UU5.Bricks.Li content="Fight club"/>
@@ -33,7 +33,7 @@ const QuestionOrl = createVisualComponent({
         </UU5.Bricks.Ol>
 
         <UU5.Forms.Select
-          label="Select oldest movie"
+          label={<UU5.Bricks.Lsi lsi={{ en: "Which of these movies is oldest?" , sk: "Ktory z tychto filmov je nastarsi?"}} />}
           size="m"
         >
           <UU5.Forms.Select.Option value="1"/>

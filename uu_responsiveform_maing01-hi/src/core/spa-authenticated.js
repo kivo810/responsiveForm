@@ -59,7 +59,7 @@ export const SpaAuthenticated = createVisualComponent({
           topFixed="smart"
           bottom={<Bottom />}
           type={3}
-          displayedLanguages={["cs", "en", "sk"]}
+          displayedLanguages={["en", "sk"]}
           left={<Left />}
           leftWidth="!xs-300px !s-300px !m-288px !l-288px !xl-288px"
           leftFixed

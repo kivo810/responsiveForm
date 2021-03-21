@@ -23,7 +23,7 @@ const QuestionColor = createVisualComponent({
 
     return (
       <div align="center">
-        <UU5.Forms.Radios label={"What color will be made from red and blue?"}
+        <UU5.Forms.Radios label={<UU5.Bricks.Lsi lsi={{ en: "What color is created by mixing red and blue?" , sk: "Aka farba vznikne zmixovanim cervenej a modrej?"}} />}
                           size="m"
                           inputWidth="150px"
                           value={[

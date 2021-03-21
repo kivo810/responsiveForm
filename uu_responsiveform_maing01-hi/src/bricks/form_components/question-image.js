@@ -27,7 +27,7 @@ const QuestionImage = createVisualComponent({
                           responsive={true} >
         </UU5.Bricks.Image>
         <UU5.Forms.Number
-          label="Number of boats"
+          label=<UU5.Bricks.Lsi lsi={{ en: "Number of boats" , sk: "Počet lodí na obrázku"}} />
           size="m"
           min={0}
           max={100}

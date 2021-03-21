@@ -2,8 +2,8 @@ import UU5 from "uu5g04";
 
 export const About = {
   about: {
-    cs: "Demo aplikace je šablona pro vývoj nových aplikací.",
-    en: "Demo application is a template for developing new applications.",
+    sk: "Responzivny formular",
+    en: "Responsive Form",
   },
   licence: {
     termsOfUse: "https://unicorn.com/tou/your_product",
@@ -18,15 +18,15 @@ export const About = {
       },
     },
     authorities: {
-      cs: [
+      sk: [
         {
-          name: "Name Surname",
+          name: "Anton Kivader",
           uri: "https://www.unicorn.com/",
         },
       ],
       en: [
         {
-          name: "Name Surname",
+          name: "Anton Kivader",
           uri: "https://www.unicorn.com/",
         },
       ],
@@ -34,17 +34,19 @@ export const About = {
   },
   leadingAuthors: [
     {
-      name: "Some Name",
+      name: "Stanislav Palencar",
       uuIdentity: "4-4-1",
       role: {
-        en: "Chief Business Architect & Stakeholder",
+        sk: "Veduci",
+        en: "Chief"
       },
     },
     {
-      name: "Other Name",
-      uuIdentity: "4-4-1",
+      name: "Anton Kivader",
+      uuIdentity: "22-9027-1",
       role: {
-        en: "Head of Development",
+        sk: "Vyvojar",
+        en: "Head of Development"
       },
     },
   ],

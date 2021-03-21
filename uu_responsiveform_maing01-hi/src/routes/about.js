@@ -101,7 +101,7 @@ export const About = createVisualComponent({
 
         <Plus4U5.App.About header={header} content={about} />
         <Plus4U5.App.Licence organisation={organisation} authorities={authorities} />
-        <Plus4U5.App.Authors header={creatorsHeader} leadingAuthors={leadingAuthors} otherAuthors={otherAuthors} />
+        <Plus4U5.App.Authors header={creatorsHeader} leadingAuthors={leadingAuthors} />
         <Plus4U5.App.Technologies technologies={technologies} content={content} />
         {licence.termsOfUse && (
           <UU5.Bricks.P className={CLASS_NAMES.termsOfUse()}>

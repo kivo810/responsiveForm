@@ -23,14 +23,14 @@ const QuestionDate = createVisualComponent({
 
     return (
       <div>
-        <UU5.Forms.DatePicker label="What is the date today?"
+        <UU5.Forms.DatePicker label={<UU5.Bricks.Lsi lsi={{ en: "What is the date today?" , sk: "Aky je dnes datum?"}}/>}
                               valueType="iso"
-                              placeholder={UU5.Common.Tools.getDateString("1990-11-21", { country: "cs-cz" })}
+                              placeholder={UU5.Common.Tools.getDateString("1990-11-21", { country: "sk-sk" })}
                               size="m" />
       </div>
     );
     //@@viewOff:render
-  },
+  }
 });
 
 export default QuestionDate;

@@ -24,14 +24,14 @@ const QuestionFillText = createVisualComponent({
     return (
       <div>
         <UU5.Forms.Text
-          label={"Rewrite text from the box"}
+          label={<UU5.Bricks.Lsi lsi={{ en: "Rewrite text from box" , sk: "Napis text z boxu"}} />}
           placeholder={"uu5uafuu5"}
           size="m"
           />
       </div>
     );
     //@@viewOff:render
-  },
+  }
 });
 
 export default QuestionFillText;

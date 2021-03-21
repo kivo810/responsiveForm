@@ -24,7 +24,7 @@ const QuestionFlavor = createVisualComponent({
     return (
       <div>
         <UU5.Forms.Select
-          label="Choose black ice cream flavor"
+          label={<UU5.Bricks.Lsi lsi={{ en: "Choose black ice cream flavor" , sk: "Zvol prichut zmrzliny s ciernou farbou"}} />}
         >
           <UU5.Forms.Select.Option value="Apple"/>
           <UU5.Forms.Select.Option value="Vanilla"/>

@@ -24,7 +24,7 @@ const QuestionPagination = createVisualComponent({
     return (
       <div>
         <UU5.Forms.Number
-          label="What page is highlighted on the bottom of the page"
+          label={<UU5.Bricks.Lsi lsi={{ en: "What page is highlighted on the bottom of the page?" , sk: "Ake cislo strany na spodku formulara je zvyraznene?"}} />}
           size="m"
           min={1}
           max={12}

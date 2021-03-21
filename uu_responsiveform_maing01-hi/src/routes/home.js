@@ -69,17 +69,17 @@ export const Home = createVisualComponent({
     return (
       <>
         <UU5.Bricks.NavBar colorSchema="primary">
-          <UU5.Bricks.NavBar.Header content="Page" />
+          <UU5.Bricks.NavBar.Header content="Menu" />
           <UU5.Bricks.NavBar.Nav>
-            <UU5.Bricks.NavBar.Nav.Item><UU5.Bricks.Icon icon="mdi-home" />Home</UU5.Bricks.NavBar.Nav.Item>
+            <UU5.Bricks.NavBar.Nav.Item><UU5.Bricks.Icon icon="mdi-home" /><UU5.Bricks.Lsi lsi={{ en: "Home" , sk: "Domov"}} /></UU5.Bricks.NavBar.Nav.Item>
             <UU5.Bricks.NavBar.Nav.Item>
-              <UU5.Bricks.Icon icon="mdi-newspaper" />News
+              <UU5.Bricks.Icon icon="mdi-newspaper" /><UU5.Bricks.Lsi lsi={{ en: "News" , sk: "Novinky"}} />
             </UU5.Bricks.NavBar.Nav.Item>
             <UU5.Bricks.NavBar.Nav.Item>
-              <UU5.Bricks.Icon icon="mdi-account" />MyProfile
+              <UU5.Bricks.Icon icon="mdi-account" /><UU5.Bricks.Lsi lsi={{ en: "Profile" , sk: "Profil"}} />
             </UU5.Bricks.NavBar.Nav.Item>
             <UU5.Bricks.NavBar.Nav.Item>
-              <UU5.Bricks.Icon icon="mdi-logout" style={{ color: "red" }} />LogOut
+              <UU5.Bricks.Icon icon="mdi-logout" style={{ color: "red" }} /><UU5.Bricks.Lsi lsi={{ en: "LogOut" , sk: "Odhlásiť"}} />
             </UU5.Bricks.NavBar.Nav.Item>
           </UU5.Bricks.NavBar.Nav>
         </UU5.Bricks.NavBar>
@@ -94,7 +94,7 @@ export const Home = createVisualComponent({
         <QuestionFillText />
 
         <UU5.Bricks.Button>
-          Click to expand more questions.
+          <UU5.Bricks.Lsi lsi={{ en: "Click to expand more question and enable answers" , sk: "Klikni na zobrazenie dalsich otazok a spristupnit nedostupne odpovede"}} />
         </UU5.Bricks.Button>
 
         <QuestionNavbar />
@@ -107,8 +107,8 @@ export const Home = createVisualComponent({
         <QuestionMap />
 
         <UU5.Forms.ContextControls align="center"
-          buttonSubmitProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Create" , sk: "Vyhodnot"}} /> }}
-          buttonCancelProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Cancel", sk: "Zrus" }} /> }}
+          buttonSubmitProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Create" , sk: "Vyhodnoť"}} /> }}
+          buttonCancelProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Cancel", sk: "Zrušiť" }} /> }}
         />
 
 

@@ -24,7 +24,7 @@ const QuestionNavbar = createVisualComponent({
     return (
       <div align="center">
         <UU5.Forms.Radios
-          label="What element is second in navbar?"
+          label={<UU5.Bricks.Lsi lsi={{ en: "What element is second in navigation menu?" , sk: "Aky prvok je druhy v navigacnom menu?"}} />}
           size="m"
           inputWidth="150px"
           value={[

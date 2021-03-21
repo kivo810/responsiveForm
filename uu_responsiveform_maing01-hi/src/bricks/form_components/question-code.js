@@ -28,7 +28,7 @@ const QuestionCode = createVisualComponent({
           Curabitur varius aliquet ipsum sit amet accumsan. Sed nec elit lacinia, tempus diam vel, molestie erat. Ut ultrices semper magna, nec feugiat diam <b>tincidunt</b> non. Nunc ac orci turpis. Aenean finibus aliquet turpis quis porttitor. Maecenas tincidunt maximus massa non ornare. Nulla ornare posuere condimentum. Nullam dapibus, quam ac porta pulvinar, mi magna euismod urna, ut sodales neque orci eget mauris. Vivamus nec laoreet leo. Etiam vitae est sem. Duis commodo elit in orci varius semper. Aenean non massa at ipsum ultrices efficitur bibendum sed tortor. Ut volutpat ex augue, a auctor ipsum sagittis varius. Suspendisse tincidunt ultrices urna at aliquam.
         </UU5.Bricks.Text>
         <UU5.Forms.Text
-          label="What word is written differently (highlighted)?"
+          label={<UU5.Bricks.Lsi lsi={{ en: "What word is written differently (highlighted)?" , sk: "Ktore slovo je zvyraznene?"}} />}
           placeholder="word"
           size="m"
         />

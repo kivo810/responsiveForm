@@ -31,7 +31,7 @@ const QuestionMap = createVisualComponent({
         />
 
         <UU5.Forms.Select
-          label="Which place is pinched in the map?"
+          label={<UU5.Bricks.Lsi lsi={{ en: "Which place is pinched in the map?" , sk: "Ktore miesto je pripnute na mape?"}} />}
         >
           <UU5.Forms.Select.Option value="Rajec"/>
           <UU5.Forms.Select.Option value="Certovica"/>

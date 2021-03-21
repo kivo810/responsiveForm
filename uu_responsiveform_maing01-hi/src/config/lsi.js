@@ -24,8 +24,8 @@ const Lsi = {
       en: "About application uuResponsiveform",
     },
     creatorsHeader: {
-      cs: "Tvůrci aplikace",
-      en: "Application creators",
+      sk: "Tvorca aplikacie",
+      en: "Application creator",
     },
     termsOfUse: {
       cs: "Podmínky užívání",

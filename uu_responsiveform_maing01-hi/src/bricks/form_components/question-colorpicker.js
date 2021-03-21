@@ -24,7 +24,7 @@ const QuestionColorPicker = createVisualComponent({
     return (
       <div>
         <UU5.Forms.ColorPicker
-          label={"Select darkest black color"}
+          label={<UU5.Bricks.Lsi lsi={{ en: "Select darkest black color" , sk: "Zvol najtmavsiu ciernu farbu"}} />}
           size={"m"}
         />
       </div>
