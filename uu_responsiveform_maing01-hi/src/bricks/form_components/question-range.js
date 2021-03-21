@@ -25,10 +25,11 @@ const QuestionRange = createVisualComponent({
       <div>
         <UU5.Forms.Slider label="Choose volume more than 100"
                           value={20}
-                          size="s"
+                          size="m"
                           min={0}
                           max={150}
                           step={1}
+                          disabled
         />
       </div>
     );

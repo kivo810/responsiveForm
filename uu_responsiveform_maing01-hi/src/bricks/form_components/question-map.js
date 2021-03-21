@@ -25,33 +25,19 @@ const QuestionMap = createVisualComponent({
       <div>
         <UU5.Bricks.GoogleMap
           mapType="roadmap"
-          latitude={50.0755381}
-          longitude={14.43780049999998}
+          latitude={49.2542036}
+          longitude={19.035632}
           googleApiKey="AIzaSyBkv-K9tpS-MrvvRKOpIGEj7H5wwdHD9pA"
-          markers={[
-            {
-              latitude: 50.0755381,
-              longitude: 14.43780049999998,
-              label: "Prague",
-              title: "Capital city",
-              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-            },
-            {
-              latitude: 50.0754616,
-              longitude: 14.43686409999998,
-              animation: 'drop',
-              onClick: (map, marker, event) => console.log(map, marker, event)
-            }
-          ]}
         />
 
         <UU5.Forms.Select
-          label="Which city is it?"
+          label="Which place is pinched in the map?"
         >
-          <UU5.Forms.Select.Option value="Bardejov"/>
-          <UU5.Forms.Select.Option value="Puchov"/>
-          <UU5.Forms.Select.Option value="Nove Zamky"/>
-          <UU5.Forms.Select.Option value="Lozorno"/>
+          <UU5.Forms.Select.Option value="Rajec"/>
+          <UU5.Forms.Select.Option value="Certovica"/>
+          <UU5.Forms.Select.Option value="Terchova"/>
+          <UU5.Forms.Select.Option value="Zazriva"/>
+          <UU5.Forms.Select.Option value="Namestovo"/>
         </UU5.Forms.Select>
       </div>
     );

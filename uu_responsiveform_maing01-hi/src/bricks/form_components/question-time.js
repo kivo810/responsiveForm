@@ -24,8 +24,8 @@ const QuestionTime = createVisualComponent({
     return (
       <div>
         <UU5.Forms.TimePicker
-          label="Pick time between 17 - 19"
-          size="s"
+          label="Pick time between 17:20 - 17:35"
+          size="m"
           placeholder={"10:00"}
           />
       </div>

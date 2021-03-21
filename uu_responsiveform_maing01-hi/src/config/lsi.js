@@ -152,9 +152,3 @@ const Lsi = {
 };
 
 export default Lsi;
-
-https://pixabay.com/get/ga8f8152e193f0f0a859b20cab8c96399413b16d84f115d9c37cc8fee4c61581f3649d0405bbb5a18aa9c52d20703765a_1920.jpg
-
-  https://pixabay.com/get/geee76bfe4b94ff255ef9b10930050a6cab30be053ffc75d98076f4ec078d1516cccf036d9ad3601c2eb5fc5af61ffcbd_1920.jpg
-
-    https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=1080&w=1920

@@ -25,6 +25,7 @@ const QuestionColorPicker = createVisualComponent({
       <div>
         <UU5.Forms.ColorPicker
           label={"Select darkest black color"}
+          size={"m"}
         />
       </div>
     );

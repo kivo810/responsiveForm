@@ -22,13 +22,16 @@ const QuestionColor = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
-        <UU5.Forms.Radios label={"What color will be made from yellow and blue?"}
-                          size="s"
+      <div align="center">
+        <UU5.Forms.Radios label={"What color will be made from red and blue?"}
+                          size="m"
+                          inputWidth="150px"
                           value={[
-                            {label: 'Dogs', name: 'dogs', value: true},
-                            {label: 'Cats', name: 'cats'},
-                            {label: 'Yaks', name: 'yaks'}
+                            {label: 'Brown', name: 'brown'},
+                            {label: 'Black', name: 'black'},
+                            {label: 'Orange', name: 'orange'},
+                            {label: 'Magenta', name: 'magenta'},
+                            {label: 'White', name: 'white'}
                           ]}>
         </UU5.Forms.Radios>
       </div>

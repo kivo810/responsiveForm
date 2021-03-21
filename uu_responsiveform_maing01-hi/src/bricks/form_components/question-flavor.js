@@ -4,7 +4,7 @@ import { createVisualComponent } from "uu5g04-hooks";
 import Config from "../config/config.js"
 //@@viewOff:imports
 
-const QuestionFlavour = createVisualComponent({
+const QuestionFlavor = createVisualComponent({
   //@@viewOn:statics
   displayName: Config.TAG + "QuestionFlavour",
   //@@viewOff:statics
@@ -26,6 +26,7 @@ const QuestionFlavour = createVisualComponent({
         <UU5.Forms.Select
           label="Choose black ice cream flavor"
         >
+          <UU5.Forms.Select.Option value="Apple"/>
           <UU5.Forms.Select.Option value="Vanilla"/>
           <UU5.Forms.Select.Option value="Orange"/>
           <UU5.Forms.Select.Option value="Raspberry"/>
@@ -37,4 +38,4 @@ const QuestionFlavour = createVisualComponent({
   },
 });
 
-export default QuestionFlavour;
+export default QuestionFlavor;

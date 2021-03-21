@@ -22,14 +22,14 @@ const QuestionYtb = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <div align="center">
         <UU5.Bricks.YoutubeVideo src={"https://www.youtube.com/watch?v=IKs1LBv5aPk"}
                                  size={"m"}
                                  muted={true}
         />
         <UU5.Forms.Text label={"What is the name of second prisoner?"}
                         placeholder={"Ladislav"}
-                        size="s"
+                        size="m"
         />
       </div>
     );

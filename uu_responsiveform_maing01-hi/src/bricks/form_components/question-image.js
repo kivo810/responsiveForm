@@ -23,12 +23,12 @@ const QuestionImage = createVisualComponent({
 
     return (
       <div>
-        <UU5.Bricks.Image src={"https://cdn.pixabay.com/photo/2020/12/27/12/07/sunrise-5863751_960_720.png"}
+        <UU5.Bricks.Image src={"https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=1080&w=1920"}
                           responsive={true} >
         </UU5.Bricks.Image>
         <UU5.Forms.Number
-          label="Number of clouds"
-          size="s"
+          label="Number of boats"
+          size="m"
           min={0}
           max={100}
           step={1}

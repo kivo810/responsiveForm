@@ -23,32 +23,41 @@ const QuestionTable = createVisualComponent({
 
     return (
       <div>
-        <UU5.Bricks.Table header='Table for form' bordered={true} responsive={true} hover={true} striped={true}>
+        <UU5.Bricks.Table bordered={true} responsive={true} hover={true} striped={true}>
           <UU5.Bricks.Table.THead>
             <UU5.Bricks.Table.Tr>
-              <UU5.Bricks.Table.Th content='Name' />
-              <UU5.Bricks.Table.Th content='Rank' />
-              <UU5.Bricks.Table.Th content='Promotion prospects' />
+              <UU5.Bricks.Table.Th content='The Hobbit Trilogy' colSpan={5} />
             </UU5.Bricks.Table.Tr>
           </UU5.Bricks.Table.THead>
           <UU5.Bricks.Table.TBody>
             <UU5.Bricks.Table.Tr>
-              <UU5.Bricks.Table.Td content='Rimmer' />
-              <UU5.Bricks.Table.Td content='2nd class technician' />
-              <UU5.Bricks.Table.Td content='comical' />
+              <UU5.Bricks.Table.Td content='1.' />
+              <UU5.Bricks.Table.Td content='The Hobbit: An Unexpected Journey' />
+              <UU5.Bricks.Table.Td content='14 December 2012' />
+              <UU5.Bricks.Table.Td content='Peter Jackson' />
+              <UU5.Bricks.Table.Td content='169 min' />
             </UU5.Bricks.Table.Tr>
             <UU5.Bricks.Table.Tr>
-              <UU5.Bricks.Table.Td content='Dave Lister' />
-              <UU5.Bricks.Table.Td content='3rd class technician' />
-              <UU5.Bricks.Table.Td content='zero' />
+              <UU5.Bricks.Table.Td content='2.' />
+              <UU5.Bricks.Table.Td content='The Hobbit: The Desolation of Smaug' />
+              <UU5.Bricks.Table.Td content='13 December 2013' />
+              <UU5.Bricks.Table.Td content='Peter Jackson' />
+              <UU5.Bricks.Table.Td content='161 min' />
             </UU5.Bricks.Table.Tr>
             <UU5.Bricks.Table.Tr>
-              <UU5.Bricks.Table.Td content='Kristine Kochanski' />
-              <UU5.Bricks.Table.Td content='1st console officer' />
-              <UU5.Bricks.Table.Td content='high' />
+              <UU5.Bricks.Table.Td content='3.' />
+              <UU5.Bricks.Table.Td content='The Hobbit: The Battle of the Five Armies' />
+              <UU5.Bricks.Table.Td content='17 December 2014' />
+              <UU5.Bricks.Table.Td content='Peter Jackson' />
+              <UU5.Bricks.Table.Td content='144 min' />
             </UU5.Bricks.Table.Tr>
           </UU5.Bricks.Table.TBody>
         </UU5.Bricks.Table>
+        <UU5.Forms.Text
+          label="Length of 3. movie (The Hobbit: The Battle of the Five Armies)"
+          placeholder="120"
+          size="m"
+        />
       </div>
     );
     //@@viewOff:render

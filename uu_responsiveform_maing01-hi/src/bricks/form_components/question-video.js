@@ -22,17 +22,21 @@ const QuestionVideo = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
-        <UU5.Bricks.Video src={"https://player.vimeo.com/external/363014752.sd.mp4?s=8d89ca7f3395ce76751b346160ff2c84125e5315&profile_id=139&oauth2_token_id=57447761"}
+      <div align="center">
+        <UU5.Bricks.Video src={"https://player.vimeo.com/external/242215707.hd.mp4?s=78dc8d65b39fc899a51d726bc533475a29941e90&profile_id=174"}
                           autoPlay={true}
                           disableControls={false}>
         </UU5.Bricks.Video>
         <UU5.Forms.Checkboxes label="What kind of pets do you like?"
-                              size="s"
+                              size="m"
+                              inputWidth="200px"
                               value={[
-                                {label: 'Dogs', name: 'dogs', value: true},
+                                {label: 'Dogs', name: 'dogs'},
                                 {label: 'Cats', name: 'cats'},
-                                {label: 'Yaks', name: 'yaks'}
+                                {label: 'Yaks', name: 'yaks'},
+                                {label: 'Value4', name: 'value4'},
+                                {label: 'Value5', name: 'value5'},
+                                {label: 'Value6', name: 'value6'}
                               ]}/>
       </div>
     );

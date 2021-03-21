@@ -32,8 +32,14 @@ const QuestionOrl = createVisualComponent({
           <UU5.Bricks.Li content="Pulp fiction"/>
         </UU5.Bricks.Ol>
 
-        //TODO - question - pick form brick
-
+        <UU5.Forms.Select
+          label="Select oldest movie"
+          size="m"
+        >
+          <UU5.Forms.Select.Option value="1"/>
+          <UU5.Forms.Select.Option value="2"/>
+          <UU5.Forms.Select.Option value="3"/>
+        </UU5.Forms.Select>
       </div>
     );
     //@@viewOff:render

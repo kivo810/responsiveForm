@@ -22,13 +22,15 @@ const QuestionNavbar = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <div align="center">
         <UU5.Forms.Radios
           label="What element is second in navbar?"
-          size="s"
+          size="m"
+          inputWidth="150px"
           value={[
             {label: 'Logout', name: 'logout'},
             {label: 'Home', name: 'home'},
+            {label: 'MyProfile', name: 'myprofile'},
             {label: 'News', name: 'news'}
           ]}
         />

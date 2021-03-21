@@ -26,7 +26,7 @@ const QuestionDate = createVisualComponent({
         <UU5.Forms.DatePicker label="What is the date today?"
                               valueType="iso"
                               placeholder={UU5.Common.Tools.getDateString("1990-11-21", { country: "cs-cz" })}
-                              size="s" />
+                              size="m" />
       </div>
     );
     //@@viewOff:render

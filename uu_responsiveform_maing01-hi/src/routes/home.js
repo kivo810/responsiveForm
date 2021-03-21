@@ -20,7 +20,7 @@ import QuestionPagination from "../bricks/form_components/question-pagination";
 import QuestionOrl from "../bricks/form_components/question-orl";
 import QuestionCode from "../bricks/form_components/question-code";
 import QuestionTable from "../bricks/form_components/question-table";
-import QuestionFlavour from "../bricks/form_components/question-flavour";
+import QuestionFlavor from "../bricks/form_components/question-flavor";
 import QuestionMap from "../bricks/form_components/question-map";
 //@@viewOff:imports
 
@@ -103,10 +103,10 @@ export const Home = createVisualComponent({
         <QuestionOrl />
         <QuestionCode />
         <QuestionTable />
-        <QuestionFlavour />
+        <QuestionFlavor />
         <QuestionMap />
 
-        <UU5.Forms.ContextControls
+        <UU5.Forms.ContextControls align="center"
           buttonSubmitProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Create" , sk: "Vyhodnot"}} /> }}
           buttonCancelProps={{ content: <UU5.Bricks.Lsi lsi={{ en: "Cancel", sk: "Zrus" }} /> }}
         />

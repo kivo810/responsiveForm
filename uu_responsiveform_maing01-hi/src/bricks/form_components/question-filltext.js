@@ -25,8 +25,8 @@ const QuestionFillText = createVisualComponent({
       <div>
         <UU5.Forms.Text
           label={"Rewrite text from the box"}
-          placeholder={"678pop876"}
-          size="s"
+          placeholder={"uu5uafuu5"}
+          size="m"
           />
       </div>
     );
