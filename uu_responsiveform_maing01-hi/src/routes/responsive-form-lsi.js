@@ -1,5 +1,4 @@
 const Lsi = {
-  //TODO - diakritika
   startStopwatch: {
     en: "Start stopwatch",
     sk: "Zapni stopky"
@@ -22,7 +21,7 @@ const Lsi = {
   },
   expandButton:{
     en: "Click to expand more question and enable answers" ,
-    sk: "Klikni na zobrazenie dalsich otazok a spristupnit nedostupne odpovede"
+    sk: "Klikni na zobrazenie ďalších otázok a sprístupnenie nedostupných odpovedí"
   },
   validate: {
     en: "Estimate",

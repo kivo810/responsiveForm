@@ -1,28 +1,27 @@
 const Lsi = {
-  //TODO - diakritika
   codeQuestion: {
     en: "What word is written differently (highlighted)?" ,
-    sk: "Ktore slovo je zvyraznene?"
+    sk: "Ktoré slovo je zvýraznené?"
   },
   colorQuestion: {
     en: "What color is created by mixing red and blue?" ,
-    sk: "Aka farba vznikne zmixovanim cervenej a modrej?"
+    sk: "Aká farba vznikne zmixovanim červenej a modrej?"
   },
   colorPicker: {
     en: "Select darkest black color",
-    sk: "Zvol najtmavsiu ciernu farbu"
+    sk: "Zvoľ najtmavšiu čiernu farbu"
   },
   datePicker: {
     en: "What is the date today?" ,
-    sk: "Aky je dnes datum?"
+    sk: "Aký je dnes dátum?"
   },
   fillTextQuestion: {
     en: "Rewrite text from box" ,
-    sk: "Napis text z boxu"
+    sk: "Napíš text z boxu"
   },
   flavor: {
     en: "Choose black ice cream flavor" ,
-    sk: "Zvol prichut zmrzliny s ciernou farbou"
+    sk: "Zvoľ príchuť zmrzliny s čiernou farbou"
   },
   boatsQuestion: {
     en: "Number of boats" ,
@@ -30,39 +29,39 @@ const Lsi = {
   },
   mapQuestion: {
     en: "Which place is pinched in the map?" ,
-    sk: "Ktore miesto je pripnute na mape?"
+    sk: "Ktoré miesto je pripnuté na mape?"
   },
   navbarQuestion: {
     en: "What element is second in navigation menu?" ,
-    sk: "Aky prvok je druhy v navigacnom menu?"
+    sk: "Aký prvok je druhý v navigačnom menu?"
   },
   movieHeader: {
     en: "Old Movies" ,
-    sk: "Stare filmy"
+    sk: "Staré filmy"
   },
   orlQuestion: {
     en: "Which of these movies is oldest?" ,
-    sk: "Ktory z tychto filmov je nastarsi?"
+    sk: "Ktorý z týchto filmov je najstarší?"
   },
   pageQuestion: {
     en: "What page is highlighted on the bottom of the page?" ,
-    sk: "Ake cislo strany na spodku formulara je zvyraznene?"
+    sk: "Aké číslo strany dole vo formulári je zvýraznene?"
   },
   rangeQuestion: {
     en: "Choose volume more than 100" ,
-    sk: "Zvol hodnotu vyssiu ako 100"
+    sk: "Zvoľ hodnotu vyššiu ako 100"
   },
   hobbitTrilogy: {
     en: "The Hobbit Trilogy",
-    sk: "Trilogia Hobit"
+    sk: "Trilógia Hobit"
   },
   tableQuestion: {
     en: "Length of 3. movie (The Hobbit: The Battle of the Five Armies)",
-    sk: "Dlzka 3. filmu Hobita"
+    sk: "Dĺžka 3. filmu Hobita"
   },
   timeQuestion: {
     en: "Pick time between 18:05 - 18:25" ,
-    sk: "Zvol cas medzi 18:05 - 18:25"
+    sk: "Zvoľ čas medzi 18:05 - 18:25"
   },
   videoQuestion: {
     en: "dasdad",
@@ -70,7 +69,7 @@ const Lsi = {
   },
   ytbQuestion: {
     en: "What is the name of third prisoner? (Can be found on 1:40)",
-    sk: "Ake je meno tretieho väzňa? (Najdes na 1:40)"
+    sk: "Aké je meno tretieho väzňa? (Nájdeš na 1:40)"
   }
 
 };
