@@ -1,4 +1,5 @@
 const Lsi = {
+  //TODO - diakritika
   codeQuestion: {
     en: "What word is written differently (highlighted)?" ,
     sk: "Ktore slovo je zvyraznene?"
@@ -68,7 +69,7 @@ const Lsi = {
     sk: "dfssffdsf"
   },
   ytbQuestion: {
-    en: "en: What is the name of third prisoner? (Can be found on 1:40)",
+    en: "What is the name of third prisoner? (Can be found on 1:40)",
     sk: "Ake je meno tretieho väzňa? (Najdes na 1:40)"
   }
 

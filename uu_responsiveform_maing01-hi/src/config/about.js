@@ -35,9 +35,9 @@ export const About = {
   leadingAuthors: [
     {
       name: "Stanislav Palencar",
-      uuIdentity: "4-4-1",
+      uuIdentity: "24-3758-1",
       role: {
-        sk: "Veduci",
+        sk: "Vedúci",
         en: "Chief"
       },
     },
@@ -45,7 +45,7 @@ export const About = {
       name: "Anton Kivader",
       uuIdentity: "22-9027-1",
       role: {
-        sk: "Vyvojar",
+        sk: "Vývojar",
         en: "Head of Development"
       },
     },

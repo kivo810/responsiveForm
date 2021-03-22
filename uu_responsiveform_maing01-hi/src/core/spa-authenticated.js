@@ -55,8 +55,8 @@ export const SpaAuthenticated = createVisualComponent({
       <Plus4U5.App.MenuProvider activeItemId={initialActiveItemId}>
         <Plus4U5.App.Page
           {...props}
-          top={<Plus4U5.App.TopBt />}
-          topFixed="smart"
+          // top={<Plus4U5.App.TopBt />}
+          // topFixed="smart"
           bottom={<Bottom />}
           type={3}
           displayedLanguages={["en", "sk"]}

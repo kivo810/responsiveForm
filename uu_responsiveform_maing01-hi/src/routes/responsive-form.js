@@ -99,32 +99,63 @@ export const ResponsiveForm = createVisualComponent({
           </UU5.Bricks.NavBar.Nav>
         </UU5.Bricks.NavBar>
 
-        <QuestionImage />
-        <QuestionColor />
-        <QuestionDate />
-        <QuestionVideo />
-        <QuestionRange />
-        <QuestionTime />
-        <QuestionColorPicker />
-        <QuestionFillText />
+        {/*<UU5.Bricks.Button align="center">{inputLsi.startStopwatch}</UU5.Bricks.Button>*/}
 
-        <UU5.Bricks.Button>
-          {inputLsi.expandButton}
-        </UU5.Bricks.Button>
+        <div class="responsive_form">
+          <QuestionImage />
+          <QuestionColor />
+          <QuestionDate />
+          <QuestionVideo />
+          <QuestionRange />
+          <QuestionTime />
+          <QuestionColorPicker />
+          <QuestionFillText />
 
-        <QuestionNavbar />
-        <QuestionYtb />
-        <QuestionPagination />
-        <QuestionOrl />
-        <QuestionCode />
-        <QuestionTable />
-        <QuestionFlavor />
-        <QuestionMap />
+          <UU5.Bricks.Button>
+            {inputLsi.expandButton}
+          </UU5.Bricks.Button>
 
-        <UU5.Forms.ContextControls align="center"
-          buttonSubmitProps={{ content: inputLsi.validate}}
-          buttonCancelProps={{ content: inputLsi.cancel }}
-        />
+          <QuestionNavbar />
+          <QuestionYtb />
+          <QuestionPagination />
+          <QuestionOrl />
+          <QuestionCode />
+          <QuestionTable />
+          <QuestionFlavor />
+          <QuestionMap />
+
+          <UU5.Forms.ContextControls align="center"
+                                     buttonSubmitProps={{ content: inputLsi.validate}}
+                                     buttonCancelProps={{ content: inputLsi.cancel }}
+          />
+        </div>
+
+        {/*<QuestionImage />*/}
+        {/*<QuestionColor />*/}
+        {/*<QuestionDate />*/}
+        {/*<QuestionVideo />*/}
+        {/*<QuestionRange />*/}
+        {/*<QuestionTime />*/}
+        {/*<QuestionColorPicker />*/}
+        {/*<QuestionFillText />*/}
+
+        {/*<UU5.Bricks.Button>*/}
+        {/*  {inputLsi.expandButton}*/}
+        {/*</UU5.Bricks.Button>*/}
+
+        {/*<QuestionNavbar />*/}
+        {/*<QuestionYtb />*/}
+        {/*<QuestionPagination />*/}
+        {/*<QuestionOrl />*/}
+        {/*<QuestionCode />*/}
+        {/*<QuestionTable />*/}
+        {/*<QuestionFlavor />*/}
+        {/*<QuestionMap />*/}
+
+        {/*<UU5.Forms.ContextControls align="center"*/}
+        {/*  buttonSubmitProps={{ content: inputLsi.validate}}*/}
+        {/*  buttonCancelProps={{ content: inputLsi.cancel }}*/}
+        {/*/>*/}
 
 
         {/*<UU5.Bricks.Pagination*/}

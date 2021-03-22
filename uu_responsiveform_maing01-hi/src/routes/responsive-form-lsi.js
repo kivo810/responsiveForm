@@ -1,4 +1,9 @@
 const Lsi = {
+  //TODO - diakritika
+  startStopwatch: {
+    en: "Start stopwatch",
+    sk: "Zapni stopky"
+  },
   home: {
     en: "Home",
     sk: "Domov"

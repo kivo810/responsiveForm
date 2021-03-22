@@ -20,14 +20,14 @@ const QuestionImage = createVisualComponent({
     //@@viewOn:hooks
     const inputLsi = useLsiValues(Lsi);
 
-    //@@viewOn:hooks
+    //@@viewOff:hooks
     //@@viewOn:private
     //@@viewOff:private
 
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Bricks.Image src={"https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=1080&w=1920"}
                           responsive={true} >
         </UU5.Bricks.Image>
@@ -38,7 +38,7 @@ const QuestionImage = createVisualComponent({
           max={100}
           step={1}
         />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },
