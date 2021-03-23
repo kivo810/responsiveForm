@@ -23,7 +23,7 @@ const Lsi = {
     en: "Click to expand more question and enable answers" ,
     sk: "Klikni na zobrazenie ďalších otázok a sprístupnenie nedostupných odpovedí"
   },
-  validate: {
+  submit: {
     en: "Estimate",
     sk: "Vyhodnoť"
   },
@@ -102,6 +102,14 @@ const Lsi = {
   ytbQuestion: {
     en: "What is the name of third prisoner? (Can be found on 1:40)",
     sk: "Aké je meno tretieho väzňa? (Nájdeš na 1:40)"
+  },
+  header: {
+    sk: "Responzívny formulár",
+    en: "Responsive Form"
+  },
+  info: {
+    sk: "Responzívny formulár postavený na technológii UAF",
+    en: "Responsive Form built on UAF technology"
   }
 };
 
