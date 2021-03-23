@@ -75,6 +75,22 @@ export const ResponsiveForm = createVisualComponent({
     //@@viewOn:hooks
 
     //@@viewOn:private
+    var startTime;
+
+    function uncoverForm(){
+      let d = new Date();
+      startTime = d.getTime();
+      document.getElementById("responsive_form").hidden = false;
+      document.getElementById("stopwatch").hidden = true;
+    }
+
+    function validateForm(){
+      let d = new Date();
+      let endTime = d.getTime();
+      let duration = (endTime - startTime) / 1000;
+      alert("Form done in: " + duration + "s");
+      window.location.reload();
+    }
     //@@viewOff:private
 
     //@@viewOn:interface
@@ -99,9 +115,9 @@ export const ResponsiveForm = createVisualComponent({
           </UU5.Bricks.NavBar.Nav>
         </UU5.Bricks.NavBar>
 
-        {/*<UU5.Bricks.Button align="center">{inputLsi.startStopwatch}</UU5.Bricks.Button>*/}
+        <UU5.Bricks.Button id="stopwatch" onClick={uncoverForm} align="center">{inputLsi.startStopwatch}</UU5.Bricks.Button>
 
-        <div class="responsive_form">
+        <div id="responsive_form" hidden={true}>
           <QuestionImage />
           <QuestionColor />
           <QuestionDate />
@@ -124,10 +140,12 @@ export const ResponsiveForm = createVisualComponent({
           <QuestionFlavor />
           <QuestionMap />
 
-          <UU5.Forms.ContextControls align="center"
-                                     buttonSubmitProps={{ content: inputLsi.validate}}
-                                     buttonCancelProps={{ content: inputLsi.cancel }}
-          />
+          <UU5.Bricks.Button onClick={validateForm}>{inputLsi.validate}</UU5.Bricks.Button>
+
+          {/*<UU5.Forms.ContextControls align="center"*/}
+          {/*                           buttonSubmitProps={{ content: inputLsi.validate}}*/}
+          {/*                           buttonCancelProps={{ content: inputLsi.cancel }}*/}
+          {/*/>*/}
         </div>
 
         {/*<QuestionImage />*/}
