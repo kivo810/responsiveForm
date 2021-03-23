@@ -27,7 +27,7 @@ const QuestionColor = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div align="center">
+      <UU5.Bricks.Div align="center">
         <UU5.Forms.Radios label={inputLsi.colorQuestion}
                           size="m"
                           inputWidth="150px"
@@ -39,7 +39,7 @@ const QuestionColor = createVisualComponent({
                             {label: 'White', name: 'white'}
                           ]}>
         </UU5.Forms.Radios>
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },
