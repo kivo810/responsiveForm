@@ -283,13 +283,13 @@ export const ResponsiveForm = createVisualComponent({
             <UU5.Bricks.NavBar.Nav>
               <UU5.Bricks.NavBar.Nav.Item><UU5.Bricks.Icon icon="mdi-home" />{inputLsi.home}</UU5.Bricks.NavBar.Nav.Item>
               <UU5.Bricks.NavBar.Nav.Item>
-                <UU5.Bricks.Icon icon="mdi-newspaper" />news
+                <UU5.Bricks.Icon icon="mdi-newspaper" />{inputLsi.news}
               </UU5.Bricks.NavBar.Nav.Item>
               <UU5.Bricks.NavBar.Nav.Item>
-                <UU5.Bricks.Icon icon="mdi-account" />myProfile
+                <UU5.Bricks.Icon icon="mdi-account" />{inputLsi.myProfile}
               </UU5.Bricks.NavBar.Nav.Item>
               <UU5.Bricks.NavBar.Nav.Item>
-                <UU5.Bricks.Icon icon="mdi-logout" style={{ color: "red" }} />logOut
+                <UU5.Bricks.Icon icon="mdi-logout" style={{ color: "red" }} />{inputLsi.logOut}
               </UU5.Bricks.NavBar.Nav.Item>
             </UU5.Bricks.NavBar.Nav>
           </UU5.Bricks.NavBar>
@@ -299,7 +299,7 @@ export const ResponsiveForm = createVisualComponent({
                             responsive={true} >
           </UU5.Bricks.Image>
           <UU5.Forms.Number
-            label={"Pocet lodi"}
+            label={inputLsi.boatsQuestion}
             name={"imgNumber"}
             size="m"
             min={0}
@@ -309,7 +309,7 @@ export const ResponsiveForm = createVisualComponent({
         </UU5.Bricks.Div>
 
         <UU5.Bricks.Div align="center">
-          <UU5.Forms.Radios label={"Color question"}
+          <UU5.Forms.Radios label={inputLsi.colorQuestion}
                             name={"colorMix"}
                             size="m"
                             inputWidth="150px"
@@ -324,7 +324,7 @@ export const ResponsiveForm = createVisualComponent({
         </UU5.Bricks.Div>
 
         <UU5.Bricks.Div>
-          <UU5.Forms.DatePicker label={"Vyber dnešný dátum"}
+          <UU5.Forms.DatePicker label={inputLsi.datePicker}
                                 name={"todaysDate"}
                                 valueType="iso"
                                 placeholder={UU5.Common.Tools.getDateString("1990-11-21", { country: "sk-sk" })}
@@ -336,7 +336,7 @@ export const ResponsiveForm = createVisualComponent({
                             autoPlay={true}
                             disableControls={false}>
           </UU5.Bricks.Video>
-          <UU5.Forms.Checkboxes label={"Video otázka"}
+          <UU5.Forms.Checkboxes label={inputLsi.videoQuestion}
                                 name={"videoAnswer"}
                                 size="m"
                                 inputWidth="200px"
@@ -351,20 +351,19 @@ export const ResponsiveForm = createVisualComponent({
         </UU5.Bricks.Div>
 
         <UU5.Bricks.Div>
-          <UU5.Forms.Slider label={"Range question"}
+          <UU5.Forms.Slider label={inputLsi.rangeQuestion}
                             name={"rangeAnswer"}
                             value={20}
                             size="m"
                             min={0}
                             max={150}
                             step={1}
-                            disabled
           />
         </UU5.Bricks.Div>
 
         <UU5.Bricks.Div>
           <UU5.Forms.TimePicker
-            label={"timeQuestion"}
+            label={inputLsi.timeQuestion}
             name={"timeAnswer"}
             size="m"
             placeholder={"10:00"}
@@ -373,7 +372,7 @@ export const ResponsiveForm = createVisualComponent({
 
         <UU5.Bricks.Div>
           <UU5.Forms.ColorPicker
-            label={"colorPicker"}
+            label={inputLsi.colorPicker}
             name={"colorPickAnswer"}
             size={"m"}
           />
@@ -381,18 +380,18 @@ export const ResponsiveForm = createVisualComponent({
 
         <UU5.Bricks.Div>
           <UU5.Forms.Text
-            label={"fillTextQuestion"}
+            label={inputLsi.fillTextQuestion}
             name={"placeholderAnswer"}
             placeholder={"uu5uafuu5"}
             size="m"
           />
         </UU5.Bricks.Div>
 
-        <UU5.Bricks.Button>Expand button</UU5.Bricks.Button>
+        <UU5.Bricks.Button>{inputLsi.expandButton}</UU5.Bricks.Button>
 
         <UU5.Bricks.Div align="center">
           <UU5.Forms.Radios
-            label={"navbarQuestion"}
+            label={inputLsi.navbarQuestion}
             name={"navbarAnswer"}
             size="m"
             inputWidth="150px"
@@ -411,7 +410,7 @@ export const ResponsiveForm = createVisualComponent({
                                    muted={true}
           />
           <UU5.Forms.Text
-            label={"ytbQuestion"}
+            label={inputLsi.ytbQuestion}
             name={"ytbAnswer"}
             placeholder={"Ladislav"}
             size="m"
@@ -420,7 +419,7 @@ export const ResponsiveForm = createVisualComponent({
 
         <UU5.Bricks.Div>
           <UU5.Forms.Number
-            label={"pageQuestion"}
+            label={inputLsi.pageQuestion}
             name={"pageAnswer"}
             size="m"
             min={1}
@@ -430,7 +429,7 @@ export const ResponsiveForm = createVisualComponent({
         </UU5.Bricks.Div>
 
         <UU5.Bricks.Div>
-          <UU5.Bricks.Section content={"movieHeader"}/>
+          <UU5.Bricks.Section content={inputLsi.movieHeader}/>
           <UU5.Bricks.Ol>
             <UU5.Bricks.Li content="Godfather (1972)"/>
             <UU5.Bricks.Li content="Fight club (1999)"/>
@@ -440,7 +439,7 @@ export const ResponsiveForm = createVisualComponent({
           </UU5.Bricks.Ol>
 
           <UU5.Forms.Select
-            label={"orlQuestion"}
+            label={inputLsi.orlQuestion}
             name={"orlAnswer"}
             size="m"
           >
@@ -458,7 +457,7 @@ export const ResponsiveForm = createVisualComponent({
             Curabitur varius aliquet ipsum sit amet accumsan. Sed nec elit lacinia, tempus diam vel, molestie erat. Ut ultrices semper magna, nec feugiat diam <b>tincidunt</b> non. Nunc ac orci turpis. Aenean finibus aliquet turpis quis porttitor. Maecenas tincidunt maximus massa non ornare. Nulla ornare posuere condimentum. Nullam dapibus, quam ac porta pulvinar, mi magna euismod urna, ut sodales neque orci eget mauris. Vivamus nec laoreet leo. Etiam vitae est sem. Duis commodo elit in orci varius semper. Aenean non massa at ipsum ultrices efficitur bibendum sed tortor. Ut volutpat ex augue, a auctor ipsum sagittis varius. Suspendisse tincidunt ultrices urna at aliquam.
           </UU5.Bricks.Text>
           <UU5.Forms.Text
-            label={"codeQuestion"}
+            label={inputLsi.codeQuestion}
             name={"codeAnswer"}
             placeholder="word"
             size="m"
@@ -469,7 +468,7 @@ export const ResponsiveForm = createVisualComponent({
           <UU5.Bricks.Table bordered={true} responsive={true} hover={true} striped={true}>
             <UU5.Bricks.Table.THead>
               <UU5.Bricks.Table.Tr>
-                <UU5.Bricks.Table.Th content={"hobbitTrilogy"} colSpan={5} />
+                <UU5.Bricks.Table.Th content={inputLsi.hobbitTrilogy} colSpan={5} />
               </UU5.Bricks.Table.Tr>
             </UU5.Bricks.Table.THead>
             <UU5.Bricks.Table.TBody>
@@ -497,7 +496,7 @@ export const ResponsiveForm = createVisualComponent({
             </UU5.Bricks.Table.TBody>
           </UU5.Bricks.Table>
           <UU5.Forms.Text
-            label={"tableQuestion"}
+            label={inputLsi.tableQuestion}
             name={"tableAnswer"}
             placeholder="120"
             size="m"
@@ -506,7 +505,7 @@ export const ResponsiveForm = createVisualComponent({
 
         <UU5.Bricks.Div>
           <UU5.Forms.Select
-            label={"flavor"}
+            label={inputLsi.flavor}
             name={"flavorSelect"}
           >
             <UU5.Forms.Select.Option value="Apple"/>
@@ -526,7 +525,7 @@ export const ResponsiveForm = createVisualComponent({
           />
 
           <UU5.Forms.Select
-            label={"mapQuestion"}
+            label={inputLsi.mapQuestion}
             name={"mapAnswer"}
           >
             <UU5.Forms.Select.Option value="Rajec"/>
