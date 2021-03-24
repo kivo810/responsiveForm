@@ -41,22 +41,22 @@ export const ResponsiveForm = createVisualComponent({
     //@@viewOn:hooks
 
     //@@viewOn:private
-    var startTime;
+    // var startTime;
+    //
+    // function uncoverForm(){
+    //   let d = new Date();
+    //   startTime = d.getTime();
+    //   document.getElementById("responsive_form").hidden = false;
+    //   document.getElementById("stopwatch").hidden = true;
+    // }
 
-    function uncoverForm(){
-      let d = new Date();
-      startTime = d.getTime();
-      document.getElementById("responsive_form").hidden = false;
-      document.getElementById("stopwatch").hidden = true;
-    }
-
-    function validateForm(){
-      let d = new Date();
-      let endTime = d.getTime();
-      let duration = (endTime - startTime) / 1000;
-      alert("Form done in: " + duration + "s");
-      window.location.reload();
-    }
+    // function validateForm(){
+    //   let d = new Date();
+    //   let endTime = d.getTime();
+    //   let duration = (endTime - startTime) / 1000;
+    //   alert("Form done in: " + duration + "s");
+    //   // window.location.reload();
+    // }
 
 
 
@@ -84,7 +84,8 @@ export const ResponsiveForm = createVisualComponent({
           </UU5.Bricks.NavBar.Nav>
         </UU5.Bricks.NavBar>
 
-        <UU5.Bricks.Button id="stopwatch" onClick={uncoverForm} align="center">{inputLsi.startStopwatch}</UU5.Bricks.Button>
+        <UU5.Bricks.Button id="stopwatch" align="center">{inputLsi.startStopwatch}</UU5.Bricks.Button>
+        {/*<UU5.Bricks.Button id="stopwatch" onClick={uncoverForm} align="center">{inputLsi.startStopwatch}</UU5.Bricks.Button>*/}
 
         <UU5.Forms.ContextSection
           level={2}
@@ -95,9 +96,10 @@ export const ResponsiveForm = createVisualComponent({
             />
           }
         >
+          {/*<UU5.Forms.ContextForm onSave={validateForm()} onCancel={onCancel}>*/}
           <UU5.Forms.ContextForm onSave={onSave} onCancel={onCancel}>
 
-            <div id="responsive_form" hidden={true}>
+            <div id="responsive_form">
               <UU5.Bricks.Div>
                 <UU5.Bricks.Image src={"https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=1080&w=1920"}
                                   responsive={true} >
@@ -181,6 +183,7 @@ export const ResponsiveForm = createVisualComponent({
                   label={inputLsi.fillTextQuestion}
                   placeholder={"uu5uafuu5"}
                   size="m"
+                  onValidate={opt => alert(opt.value)}
                 />
               </div>
               {/*<QuestionFillText />*/}
