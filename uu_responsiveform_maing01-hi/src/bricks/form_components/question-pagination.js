@@ -27,7 +27,7 @@ const QuestionPagination = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Forms.Number
           label={inputLsi.pageQuestion}
           size="m"
@@ -35,7 +35,7 @@ const QuestionPagination = createVisualComponent({
           max={12}
           step={1}
         />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },

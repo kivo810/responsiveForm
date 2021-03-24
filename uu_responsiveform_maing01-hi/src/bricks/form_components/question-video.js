@@ -27,7 +27,7 @@ const QuestionVideo = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div align="center">
+      <UU5.Bricks.Div align="center">
         <UU5.Bricks.Video src={"https://player.vimeo.com/external/242215707.hd.mp4?s=78dc8d65b39fc899a51d726bc533475a29941e90&profile_id=174"}
                           autoPlay={true}
                           disableControls={false}>
@@ -43,7 +43,7 @@ const QuestionVideo = createVisualComponent({
                                 {label: 'Value5', name: 'value5'},
                                 {label: 'Value6', name: 'value6'}
                               ]}/>
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },

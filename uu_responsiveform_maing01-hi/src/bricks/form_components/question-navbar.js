@@ -27,7 +27,7 @@ const QuestionNavbar = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div align="center">
+      <UU5.Bricks.Div align="center">
         <UU5.Forms.Radios
           label={inputLsi.navbarQuestion}
           size="m"
@@ -39,7 +39,7 @@ const QuestionNavbar = createVisualComponent({
             {label: 'News', name: 'news'}
           ]}
         />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },

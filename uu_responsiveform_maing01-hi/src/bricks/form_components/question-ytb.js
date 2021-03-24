@@ -27,7 +27,7 @@ const QuestionYtb = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div align="center">
+      <UU5.Bricks.Div align="center">
         <UU5.Bricks.YoutubeVideo src={"https://www.youtube.com/watch?v=IKs1LBv5aPk"}
                                  size={"m"}
                                  muted={true}
@@ -37,7 +37,7 @@ const QuestionYtb = createVisualComponent({
                         placeholder={"Ladislav"}
                         size="m"
         />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },

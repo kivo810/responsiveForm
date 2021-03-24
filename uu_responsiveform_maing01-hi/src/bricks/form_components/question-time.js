@@ -27,13 +27,13 @@ const QuestionTime = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Forms.TimePicker
           label={inputLsi.timeQuestion}
           size="m"
           placeholder={"10:00"}
           />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },

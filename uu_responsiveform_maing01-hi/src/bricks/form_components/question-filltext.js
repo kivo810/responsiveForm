@@ -27,13 +27,13 @@ const QuestionFillText = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Forms.Text
           label={inputLsi.fillTextQuestion}
           placeholder={"uu5uafuu5"}
           size="m"
           />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   }

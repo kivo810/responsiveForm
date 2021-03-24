@@ -27,7 +27,7 @@ const QuestionTable = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Bricks.Table bordered={true} responsive={true} hover={true} striped={true}>
           <UU5.Bricks.Table.THead>
             <UU5.Bricks.Table.Tr>
@@ -63,7 +63,7 @@ const QuestionTable = createVisualComponent({
           placeholder="120"
           size="m"
         />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },

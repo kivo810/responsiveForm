@@ -27,7 +27,7 @@ const QuestionRange = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Forms.Slider label={inputLsi.rangeQuestion}
                           value={20}
                           size="m"
@@ -36,7 +36,7 @@ const QuestionRange = createVisualComponent({
                           step={1}
                           disabled
         />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   }

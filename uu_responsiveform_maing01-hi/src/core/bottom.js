@@ -42,7 +42,7 @@ export const Bottom = createVisualComponent({
     const attrs = UU5.Common.VisualComponent.getAttrs(props, CLASS_NAMES.main());
     return (
       <div {...attrs}>
-        <div>
+        <UU5.Bricks.Div>
           <UU5.Bricks.Pagination
             items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
             activeIndex={8}
@@ -53,7 +53,7 @@ export const Bottom = createVisualComponent({
             onChanged={(comp, index, newActive) => console.log(comp, index, newActive)}
             background
           />
-        </div>
+        </UU5.Bricks.Div>
         <div>
           uuResponsiveformMaing01-{process.env.VERSION} © Unicorn,{" "}
           <UU5.Bricks.Link target="_blank" href="TODO">

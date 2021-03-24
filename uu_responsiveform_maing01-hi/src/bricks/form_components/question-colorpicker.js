@@ -27,12 +27,12 @@ const QuestionColorPicker = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Forms.ColorPicker
           label={inputLsi.colorPicker}
           size={"m"}
         />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },

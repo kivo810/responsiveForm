@@ -27,12 +27,12 @@ const QuestionDate = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Forms.DatePicker label={inputLsi.datePicker}
                               valueType="iso"
                               placeholder={UU5.Common.Tools.getDateString("1990-11-21", { country: "sk-sk" })}
                               size="m" />
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   }

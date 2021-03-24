@@ -27,7 +27,7 @@ const QuestionFlavor = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Forms.Select
           label={inputLsi.flavor}
         >
@@ -37,7 +37,7 @@ const QuestionFlavor = createVisualComponent({
           <UU5.Forms.Select.Option value="Raspberry"/>
           <UU5.Forms.Select.Option value="Cocoa"/>
         </UU5.Forms.Select>
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },

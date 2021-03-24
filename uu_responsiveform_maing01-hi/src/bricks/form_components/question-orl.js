@@ -28,7 +28,7 @@ const QuestionOrl = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Bricks.Section content={inputLsi.movieHeader}/>
         <UU5.Bricks.Ol className={Css.ol()}>
           <UU5.Bricks.Li content="Godfather (1972)"/>
@@ -48,7 +48,7 @@ const QuestionOrl = createVisualComponent({
           <UU5.Forms.Select.Option value="4"/>
           <UU5.Forms.Select.Option value="5"/>
         </UU5.Forms.Select>
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },

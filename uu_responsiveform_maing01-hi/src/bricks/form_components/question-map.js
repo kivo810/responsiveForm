@@ -27,7 +27,7 @@ const QuestionMap = createVisualComponent({
     //@@viewOn:render
 
     return (
-      <div>
+      <UU5.Bricks.Div>
         <UU5.Bricks.GoogleMap
           mapType="roadmap"
           latitude={49.2542036}
@@ -44,7 +44,7 @@ const QuestionMap = createVisualComponent({
           <UU5.Forms.Select.Option value="Zazriva"/>
           <UU5.Forms.Select.Option value="Namestovo"/>
         </UU5.Forms.Select>
-      </div>
+      </UU5.Bricks.Div>
     );
     //@@viewOff:render
   },
