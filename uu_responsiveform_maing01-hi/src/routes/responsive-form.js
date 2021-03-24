@@ -271,6 +271,22 @@ export const ResponsiveForm = createVisualComponent({
     //@@viewOn:render
     return (
       <>
+        <UU5.Bricks.NavBar colorSchema="primary">
+          <UU5.Bricks.NavBar.Header content="Menu" />
+          <UU5.Bricks.NavBar.Nav>
+            <UU5.Bricks.NavBar.Nav.Item><UU5.Bricks.Icon icon="mdi-home" />{inputLsi.home}</UU5.Bricks.NavBar.Nav.Item>
+            <UU5.Bricks.NavBar.Nav.Item>
+              <UU5.Bricks.Icon icon="mdi-newspaper" />{inputLsi.news}
+            </UU5.Bricks.NavBar.Nav.Item>
+            <UU5.Bricks.NavBar.Nav.Item>
+              <UU5.Bricks.Icon icon="mdi-account" />{inputLsi.myProfile}
+            </UU5.Bricks.NavBar.Nav.Item>
+            <UU5.Bricks.NavBar.Nav.Item>
+              <UU5.Bricks.Icon icon="mdi-logout" style={{ color: "red" }} />{inputLsi.logOut}
+            </UU5.Bricks.NavBar.Nav.Item>
+          </UU5.Bricks.NavBar.Nav>
+        </UU5.Bricks.NavBar>
+
         <UU5.Bricks.Container>
           <UU5.Forms.Form
             // onSave={(opt) => alert(`opt.values:\n${JSON.stringify(opt.values, null, 2)}`)}
@@ -278,22 +294,6 @@ export const ResponsiveForm = createVisualComponent({
             // header={<UU5.Bricks.Box content='Registration form' colorSchema='green' className='font-size-m' />}
             // footer={<UU5.Bricks.Box content='Unicorn 2018' colorSchema='grey' className='font-size-xs' />}
           >
-
-            <UU5.Bricks.NavBar colorSchema="primary">
-              <UU5.Bricks.NavBar.Header content="Menu" />
-              <UU5.Bricks.NavBar.Nav>
-                <UU5.Bricks.NavBar.Nav.Item><UU5.Bricks.Icon icon="mdi-home" />{inputLsi.home}</UU5.Bricks.NavBar.Nav.Item>
-                <UU5.Bricks.NavBar.Nav.Item>
-                  <UU5.Bricks.Icon icon="mdi-newspaper" />{inputLsi.news}
-                </UU5.Bricks.NavBar.Nav.Item>
-                <UU5.Bricks.NavBar.Nav.Item>
-                  <UU5.Bricks.Icon icon="mdi-account" />{inputLsi.myProfile}
-                </UU5.Bricks.NavBar.Nav.Item>
-                <UU5.Bricks.NavBar.Nav.Item>
-                  <UU5.Bricks.Icon icon="mdi-logout" style={{ color: "red" }} />{inputLsi.logOut}
-                </UU5.Bricks.NavBar.Nav.Item>
-              </UU5.Bricks.NavBar.Nav>
-            </UU5.Bricks.NavBar>
 
             <UU5.Bricks.Div>
               <UU5.Bricks.Image src={"https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=1080&w=1920"}
