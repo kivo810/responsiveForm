@@ -17,14 +17,14 @@ const STATICS = {
 };
 
 
-function validateForm(opt) {
+function validateForm(opt, timer) {
   // let correctAnswers = 0;
   // let incorrectAnswers = 0;
   // let wrongAnswers = [];
-  // let d = new Date();
-  // let duration = (d.getTime() - timer.getTime()) / 1000;
+  let d = new Date();
+  let duration = (d.getTime() - timer.getTime()) / 1000;
   const {correctAnswers, incorrectAnswers, wrongAnswers} = validateFormComponents(opt);
-  // alert("Form done in " + duration + "s");
+  alert("Form done in " + duration + "s");
   alert("Correct answers: " + correctAnswers);
   alert("Wrong answers: " + incorrectAnswers);
   alert("Wrong answers: " + wrongAnswers);
@@ -257,6 +257,7 @@ export const ResponsiveForm = createVisualComponent({
   render(onSave, onCancel) {
     //@@viewOn:hooks
     const inputLsi = useLsiValues(Lsi);
+    let startTime;
 
     //@@viewOn:hooks
 
@@ -288,9 +289,10 @@ export const ResponsiveForm = createVisualComponent({
         </UU5.Bricks.NavBar>
 
         <UU5.Bricks.Container>
+          <UU5.Bricks.Button onClick={startTime = new Date()}> {inputLsi.startStopwatch}</UU5.Bricks.Button>
           <UU5.Forms.Form
             // onSave={(opt) => alert(`opt.values:\n${JSON.stringify(opt.values, null, 2)}`)}
-            onSave={(opt) => validateForm(opt)}
+            onSave={(opt) => validateForm(opt, startTime)}
             // header={<UU5.Bricks.Box content='Registration form' colorSchema='green' className='font-size-m' />}
             // footer={<UU5.Bricks.Box content='Unicorn 2018' colorSchema='grey' className='font-size-xs' />}
           >
