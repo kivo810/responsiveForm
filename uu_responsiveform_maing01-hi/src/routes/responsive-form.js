@@ -21,6 +21,7 @@ function validateForm(opt, timer) {
   // let correctAnswers = 0;
   // let incorrectAnswers = 0;
   // let wrongAnswers = [];
+  console.log(JSON.stringify(opt.component.getValues(), null, 1));
   let d = new Date();
   let duration = (d.getTime() - timer.getTime()) / 1000;
   const {correctAnswers, incorrectAnswers, wrongAnswers} = validateFormComponents(opt);
@@ -28,7 +29,7 @@ function validateForm(opt, timer) {
   alert("Correct answers: " + correctAnswers);
   alert("Wrong answers: " + incorrectAnswers);
   alert("Wrong answers: " + wrongAnswers);
-  alert(JSON.stringify(opt.component.getValues(), null, 1))
+  alert(JSON.stringify(opt.component.getValues(), null, 1));
   window.location.reload();
 }
 
@@ -65,7 +66,7 @@ function validateFormComponents(opt){
     wrongAnswers.push("4");
   }
 
-  if (validateRange(opt.component.getValues().rangeAnswers)){
+  if (validateRange(opt.component.getValues().rangeAnswer)){
     correctAnswers++;
   } else {
     incorrectAnswers++;
@@ -187,14 +188,19 @@ function validateVideo(videoAnswer) {
   return false;
 }
 
-function validateRange(rangeAnswers) {
-  return parseInt(rangeAnswers) > 120;
+function validateRange(rangeAnswer) {
+  return rangeAnswer > 120;
 }
 
 function validateTime(timeAnswer) {
   // alert(timeAnswer);
-  let time = timeAnswer.split(":");
-  return parseInt(time[0]) === 7 && parseInt(time[1]) > 9 && parseInt(time[1]) < 26;
+  if (timeAnswer !== undefined) {
+    let time = timeAnswer.split(":");
+    return parseInt(time[0]) === 7 && parseInt(time[1]) > 9 && parseInt(time[1]) < 26;
+  } else {
+    return false;
+  }
+
 }
 
 function validateBrightestColor(colorPickAnswer) {
