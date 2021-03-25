@@ -319,7 +319,7 @@ export const ResponsiveForm = createVisualComponent({
                 />
               </UU5.Bricks.Div>
 
-              <UU5.Bricks.Div align="center">
+              <div className={Css.left()}>
                 <UU5.Forms.Radios label={inputLsi.colorQuestion}
                                   name={"colorMix"}
                                   size="m"
@@ -332,15 +332,15 @@ export const ResponsiveForm = createVisualComponent({
                                     {label: 'White', name: 'white'}
                                   ]}>
                 </UU5.Forms.Radios>
-              </UU5.Bricks.Div>
+              </div>
 
-              <UU5.Bricks.Div>
+              <div className={Css.right()}>
                 <UU5.Forms.DatePicker label={inputLsi.datePicker}
                                       name={"todaysDate"}
                                       valueType="iso"
                                       placeholder={UU5.Common.Tools.getDateString("1990-11-21", { country: "sk-sk" })}
                                       size="m" />
-              </UU5.Bricks.Div>
+              </div>
 
               <UU5.Bricks.Div align="center">
                 <UU5.Bricks.Video src={"https://player.vimeo.com/external/242215707.hd.mp4?s=78dc8d65b39fc899a51d726bc533475a29941e90&profile_id=174"}
@@ -361,7 +361,7 @@ export const ResponsiveForm = createVisualComponent({
                                       ]}/>
               </UU5.Bricks.Div>
 
-              <UU5.Bricks.Div>
+              <div className={Css.left()}>
                 <UU5.Forms.Slider label={inputLsi.rangeQuestion}
                                   name={"rangeAnswer"}
                                   value={20}
@@ -370,33 +370,33 @@ export const ResponsiveForm = createVisualComponent({
                                   max={150}
                                   step={1}
                 />
-              </UU5.Bricks.Div>
+              </div>
 
-              <UU5.Bricks.Div>
+              <div className={Css.right()}>
                 <UU5.Forms.TimePicker
                   label={inputLsi.timeQuestion}
                   name={"timeAnswer"}
                   size="m"
                   placeholder={"10:00"}
                 />
-              </UU5.Bricks.Div>
+              </div>
 
-              <UU5.Bricks.Div>
+              <div className={Css.left()}>
                 <UU5.Forms.ColorPicker
                   label={inputLsi.colorPicker}
                   name={"colorPickAnswer"}
                   size={"m"}
                 />
-              </UU5.Bricks.Div>
+              </div>
 
-              <UU5.Bricks.Div>
+              <div className={Css.right()}>
                 <UU5.Forms.Text
                   label={inputLsi.fillTextQuestion}
                   name={"placeholderAnswer"}
                   placeholder={"uu5uafuu5"}
                   size="m"
                 />
-              </UU5.Bricks.Div>
+              </div>
 
               <UU5.Bricks.Button>{inputLsi.expandButton}</UU5.Bricks.Button>
 

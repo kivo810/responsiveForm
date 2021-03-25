@@ -1,12 +1,17 @@
 import Config from "./config/config";
 
-UU5.Common.Css.createCssModule("form");
+const left = () => Config.Css.css`
+  width: 50%;
+  float: left;
+`;
 
-const body = () => Config.Css.css`
-  vertical-align: middle;
+const right = () => Config.Css.css`
+  width: 50%;
+  float: left;
 `;
 
 export default {
-  body
+  left,
+  right
 };
 
